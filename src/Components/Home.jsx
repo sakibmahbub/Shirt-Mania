@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  const tshirts = useLoaderData();
+  console.log(tshirts);
+  return <div></div>;
 };
 
 export default Home;
